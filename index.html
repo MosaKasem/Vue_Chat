@@ -18,6 +18,12 @@
             <p>{{ greet() }}</p>
             <a v-bind:href="url">UTUBE</a>
             <div v-bind:class="classes">Check style</div>
+            <input type="text" v-bind:value="name">
+            <p>I earn {{ wage }}</p>
+            <button v-on:click="changeWage(+1)">Increase wage</button>
+            <button v-on:click="changeWage(-1)">Decrease wage</button>
+            <button v-on:dblclick="changeWage(+5)">Increase wage</button>
+            <button v-on:dblclick="changeWage(-5)">Decrease wage</button>
         </div>
 
         <script src="app.js"></script>
