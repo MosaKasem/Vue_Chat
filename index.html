@@ -2,11 +2,22 @@
     <head>
         <title>Vue Stuff</title>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+            .one {
+                color: green;
+            }
+            .two {
+                text-decoration: line-through;
+            }
+        </style>
     </head>
     <body>
         <h1>Vue shenanings</h1>
         <div id="app">
             <h2>{{ title }}</h2>
+            <p>{{ greet() }}</p>
+            <a v-bind:href="url">UTUBE</a>
+            <div v-bind:class="classes">Check style</div>
         </div>
 
         <script src="app.js"></script>
