@@ -1,13 +1,19 @@
 new Vue({
     el: '#app',
     data: {
-        title: 'Testing Vue',
-        wage: 10,
-        name: `Write your name`,
-        url: 'http://youtube.com',
-        classes: ['one', 'two']
+        title: 'Testing'
     },
     methods: {
+        logEvent(e) {
+            console.log('e: ', e);
+        },
+        logCoords(e) {
+            this.coords.x = e.offsetX
+            this.coords.y = e.offsetY
+        },
+        updateName(e) {
+            this.name = e.target.value
+        },
         greet() {
             return `Hey there ${this.title}`
         },
