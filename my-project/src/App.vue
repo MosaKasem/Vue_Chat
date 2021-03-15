@@ -2,16 +2,19 @@
   <div id="app">
     <router-view/>
     <Navbar />
+    <Blogs />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
+import Blogs from './components/Blogs'
 
 export default {
   name: 'App',
   components: {
-    Navbar: Navbar
+    Navbar: Navbar,
+    Blogs: Blogs
   },
   data () {
     return {
